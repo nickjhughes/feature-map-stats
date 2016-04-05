@@ -70,14 +70,14 @@ if nargout == 2
         end
         windno(l) = sum(diff(unwrap(L)))/(2*pi);
     end
-end
 
-% Check for some possible errors
-if any(abs(round(windno)-windno) > 10^(-5))
-    warning('Some winding numbers are not exactly integers.');
-end
-if any(abs(windno)-1>eps*10)
-    warning('Some winding numbers are different from ±1.');
+    % Check for some possible errors
+    if any(abs(round(windno)-windno) > 10^(-5))
+        warning('Some winding numbers are not exactly integers.');
+    end
+    if any(abs(windno)-1>eps*10)
+        warning('Some winding numbers are different from ±1.');
+    end
 end
 
 

@@ -7,7 +7,8 @@ function [angles, counts, crossing_angles] = crossing_angle_dist(od, op, mask, n
 % Calculates a distribution of intersection angles between the OP and OD maps.
 % Uses od_op_crossing to find the crossing angles. A binary mask can be used
 % to restrict the analysis. Both the distribution, raw counts in each bin,
-% and all the crossing angles are returned.
+% and all the crossing angles are returned. [0:10:80, 91] is the default bins,
+% where the last element is used to correctly handle angles wrapping around.
 %
 % See also:
 % od_op_crossing

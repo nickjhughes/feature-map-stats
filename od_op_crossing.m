@@ -9,6 +9,9 @@ function crossing = od_op_crossing(od, op, nangles)
 % and nangles (default is 4) equally spaced iso-orientation contours of the OP
 % map.
 %
+% Requires intersections:
+% http://www.mathworks.com/matlabcentral/fileexchange/11837-fast-and-robust-curve-intersections/content/intersections.m
+%
 % See also:
 % crossing_angle_dist
 
@@ -74,5 +77,7 @@ for j = 1:length(x0)
     x = [x2(floor(J(j))),x2(floor(J(j))+1)];
     y = [y2(floor(J(j))),y2(floor(J(j))+1)];
     th2 = atan2(y(2)-y(1),x(2)-x(1));
-    crossing(j) = angle_difference(th1, th2);
+    angle_diff = abs(th1 - th2);
+    angle_diff = min(min(angle_diff, abs(pi-angle_diff)), 2*pi-angle_diff);
+    crossing(j) = angle_diff;
 end

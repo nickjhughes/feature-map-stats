@@ -22,6 +22,9 @@ if nargin < 4
     nbins = 5;
 end
 
+% Convert OP to selectivity
+op = abs(op);
+
 % Mask
 op(~mask) = nan;
 od(~mask) = nan;

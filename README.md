@@ -7,6 +7,8 @@ Cloherty, SL, Hughes, NJ, Hietanen, MA, Bhagavatula, PS, Goodhill, GJ,
 Ibbotson, MR (2016) "Sensory experience modifies feature map relationships in
 visual cortex."
 
+`tests.m` contains a collection of tests and examples of the provided functions.
+
 ## Functions
 
 ### Map pre-processing and generation

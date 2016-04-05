@@ -70,7 +70,7 @@ end
 bin_od_neg(od_neg > q(nbins-1)) = 1;
 
 % Find pinwheels in OP
-if ~isempty(rpinw)
+if isempty(rpinw)
     rpinw = locate_pinwheels(op);
 end
 npinw = size(rpinw, 1);
