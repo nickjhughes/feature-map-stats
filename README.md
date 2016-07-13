@@ -1,11 +1,11 @@
 # Feature map statistics
 A collection of MATLAB functions for generating and analysing cortical feature
-maps. All functions were developed and tested with MATLAB R2014b. 
- 
+maps. All functions were developed and tested with MATLAB R2014b.
+
 This code was used to perform the analyses in the following paper:
 Cloherty, SL, Hughes, NJ, Hietanen, MA, Bhagavatula, PS, Goodhill, GJ,
 Ibbotson, MR (2016) "Sensory experience modifies feature map relationships in
-visual cortex."
+visual cortex." eLife 2016;5:e13911. doi: 10.7554/eLife.13911.
 
 `tests.m` contains a collection of tests and examples of the provided functions.
 
@@ -35,7 +35,7 @@ visual cortex."
 - `fourier_wavelength`: Calculates the average wavelength of an OP map using
                         its Fourier spectrum. Used by `pinw_density`.
 
-### Plotting 
+### Plotting
 - `op_contours` - Calculates the contours of an OP map for pretty plotting.
 
 ### Other
